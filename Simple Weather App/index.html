@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <div class="weather__logo">
+                <i class="fas fa-cloud-sun" id="weather__logo"></i>
+            </div>
+            <h1>Simple Weather App</h1>
+            <form action="submit">
+                <input id="input" type="text" placeholder="Search for a city">
+                <button type="submit">Search</button>
+                <span id="msg"></span>
+            </form>
+        </div>
+        
+    </header>
+    <main>
+        <div class="results__container nodisplay">
+            <div class="card__container">
+                <p id="city__name">...</p>
+                <p id="country__name">...</p>
+                <p id="city__degree"><span id="degree">...</span><sup>°C</sup></p>
+                <img src="01d.svg" alt="" id="weather__icon">
+                <p id="weather__condition">...</p>
+            </div>
+        </div>
+        <div class="hint">
+            <i class="fas fa-info-circle" id="hint__info" title="Click for more information"></i>
+            <p id="hint" class="nodisplay">If you want to search for a specific city in another country use a comma after the city and specify the country code 
+                after it, for example: rome, it : this is going to show the weather of Rome in Italy instead of the US.</p>
+        </div>
+    </main>
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>
