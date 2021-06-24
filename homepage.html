@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bálint Roland Portfolio Site</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- <img src="cssbw2.png" class="header__logo" alt="Logo">
+        <nav class="nav">
+            <ul class="nav__links">
+                <li><a>about</a></li>
+                <li><a>portfolio</a></li>
+                <li><a>contact</a></li>
+            </ul>
+        </nav> -->
+            <!-- <a class="btn nav__btn">Contact Me!</a> -->
+            <nav>
+                <div class="logo">
+                    <h4>BR</h4>
+                </div>
+                <ul class="nav__links">
+                    <li><a href="#about" >about</a></li>
+                    <li><a href="#contact" >contact</a></li>
+                    <li><a href="#portfolio" >portfolio</a></li>
+                </ul>
+            </nav>
+    </header>
+    <section class="section__hero">
+        <div class="container">
+            <div class="col">
+                <h1 class="hero__title"><span class="fontsize__lg">Hi!</span><br> My name is Roland</h1>
+                <p class="hero__text"><strong>I'm a newbie front end developer </strong> who loves learning, designing and buidling stuff, currently living in Hungary. Welcome to my site!</p>
+                <div class="btn__container">
+                    <a href="#" class="btn">Get in touch<i class="fas fa-handshake"></i></a>
+                </div>
+            </div>
+            <div class="col" >
+                <img class="hero__img" src="laptop.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="section__about" id="about">
+        <h2 class="main__title">about me</h2>
+        <div class="container">
+            <p class="about__text">I think that life long learning is the key for a happy and fulfilling life. 
+                That’s why I always aspire to be better than my yesterday self.<br>I always had an interest 
+                for technology and design, so learning front-end developement was a no brainer for me, after I realized it perfectly combines my passions into one big package. 
+                I am currently on the road to become a professional front-end developer. After this cheesy intro let me introduce you my skills and knowledge. 
+                If you liked this short intro about me, click the button to get my CV!</p>
+            <div class="btn__container">
+                <a href="#" class="btn">Download CV <i class="fas fa-long-arrow-alt-down"></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="section__skills">
+        <h2 class="main__title">skills & knowledge</h2>
+        <p class="skills__title">Web Developement</p>
+        <div class="skills__container">
+            <div class="skill__container"><img src="htmlbw2.png" class="skill__logo" alt=""><p class="skill__name">HTML 5</p></div>
+            <div class="skill__container"><img src="cssbw2.png" class="skill__logo" alt=""><p class="skill__name">CSS 3</p></div>
+            <div class="skill__container"><img src="jsbw.png" class="skill__logo" alt=""><p class="skill__name">Javascript</p></div>
+            <div class="skill__container"><img src="sassbw.png" class="skill__logo" alt=""><p class="skill__name">Sass</p></div>
+            <div class="skill__container"><img src="bootstrapbw.png" class="skill__logo" alt=""><p class="skill__name">Bootstrap</p></div>
+            <div class="skill__container"><img src="postgresqlbw.png" class="skill__logo" alt=""><p class="skill__name">PostgreSQL</p></div>
+            <div class="skill__container"><img src="wordpressbw.png" class="skill__logo" alt=""><p class="skill__name">Wordpress</p></div>
+            <div class="skill__container"><img src="joomlabw.png" class="skill__logo" alt=""><p class="skill__name">Joomla</p></div>
+            <div class="skill__container"><img src="shopifybw.png" class="skill__logo" alt=""><p class="skill__name">Shopify</p></div>
+        </div>
+        <p class="skills__title">Graphic Design</p>
+        <div class="skills__container">
+            <div class="skill__container"><img src="psbw.png" class="skill__logo" alt=""><p class="skill__name">Photoshop</p></div>
+            <div class="skill__container"><img src="aibw2.png" class="skill__logo" alt=""><p class="skill__name">Illustrator</p></div>
+            <div class="skill__container"><img src="xdbw.png" class="skill__logo" alt=""><p class="skill__name">Adobe Xd</p></div>
+            <div class="skill__container"><img src="indesignbw.png" class="skill__logo" alt=""><p class="skill__name">InDesign</p></div>
+            <div class="skill__container"><img src="figmabw.png" class="skill__logo" alt=""><p class="skill__name">Figma</p></div>
+        </div>
+        <div class="btn__container">
+            <a href="#" class="btn center">Check out my portfolio<i class="far fa-eye"></i></a>
+        </div>
+    </section>
+    <section class="section__contact" id="contact">
+        <h2 class="main__title">contact</h2>
+        <div class="container">
+                <form  action="https://formsubmit.co/rbalint1994@gmail.com" method="POST">
+                    <div class="col">
+                        <input class="name__input" type="text" name="name" placeholder="Name" required>
+                        <input class="email__input" type="email" name="Email Address" placeholder="Email" required> 
+                        <input type="hidden" name="_subject" value="New message from your portfolio website">
+                    </div>
+                    <div class="col">
+                        <textarea class="message__input" name="message" type="text" placeholder="Write your message here..." rows="10"></textarea>
+                    </div>
+                    <div class="btn__container">
+                        <button class="btn" type="submit">Send message<i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </form>
+                
+        </div>
+    </section>
+    <section class="section__portfolio" id="portfolio">
+        <h2 class="main__title">portfolio</h2>
+        <div class="container">
+            <div class="portfolio__container">
+                <div class="col center">
+                    <img class="portfolio__thumbnail " src="waybackportfolio2.png" alt="">
+                </div>
+                <div class="col">
+                    <h3 class="portfolio__title">wayback app</h3>
+                    <p class="portfolio__text">I made up a time-travelling application and made a landing page for it. 
+                        First I designed the layout in Figma and made some mockups in Photoshop. After I was satisfied with the results I coded it. 
+                        I only used HTML and pure CSS. It was a great way to practice using flexbox.</p>
+                        <a class="githubproject__text" href="#"><i class="fab fa-github"></i><p class="githublink__text">Check out project on github</p></a>    
+                </div>
+            </div>
+            <div class="portfolio__container">
+                <div class="col center">
+                    <img class="portfolio__thumbnail " src="waybackportfolio2.png" alt="">
+                </div>
+                <div class="col">
+                    <h3 class="portfolio__title">email statistics calculator</h3>
+                    <p class="portfolio__text">At my current workplace we send a lot of emails for marketing purposes. 
+                        Unfortunately the service we use have terrible statistic reports, so I decided to make a calculator to make it easier and quicker to calculate our results. 
+                        I have used HTML, CSS and vanilla Javascript for this mini project.</p>
+                        <a class="githubproject__text" href="#"><i class="fab fa-github"></i><p class="githublink__text">Check out project on github</p></a>    
+                </div>
+            </div>
+            <div class="portfolio__container">
+                <div class="col center">
+                        <img class="portfolio__thumbnail" src="waybackportfolio2.png" alt="">
+                    </div>
+                <div class="col">
+                    <h3 class="portfolio__title">wayback app</h3>
+                    <p class="portfolio__text">I made up a time-travelling application and made a landing page for it. 
+                        First I designed the layout in Figma and made some mockups in Photoshop. After I was satisfied with the results I coded it. 
+                        I only used HTML and pure CSS. It was a great way to practice using flexbox.</p>
+                        <a class="githubproject__text" href="#"><i class="fab fa-github"></i><p class="githublink__text">Check out project on github</p></a>    
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="section__footer">
+        <h3 class="footer__title">let's work together</h3>
+        <p class="footer__text">I'm currenty seeking for new and exciting opportunities.<br>
+            Reach out to me via email or on my socials if you are interested!<i class="fas fa-smile-wink"></i>
+        </p>
+        <p class="footer__social">social</p>
+        <a href="#" class="footer__link"><i class="fab fa-github footer__logo"></i></a>
+        <a href="#" class="footer__link"><i class="fab fa-linkedin footer__logo"></i></a>
+        <a href="#" class="footer__link"><i class="fas fa-envelope footer__logo"></i></a>
+    </footer>
+    <script src="homepage.js"></script>
+</body>
+</html>
