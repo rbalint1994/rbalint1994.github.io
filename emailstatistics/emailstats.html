@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="emailstats.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet"> -->
+    <title>Email stats</title>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <figure>
+                <img class="image" src="C:\Users\balrol\OneDrive - Samlerhuset B.V\Roli\FullStackDev course\JS\statistics.png" alt="">
+            </figure>
+            <h1>Email statistics calculator</h1>
+            <h3>Write in your stats to get your results</h3>
+        </div>
+        <div class="form">
+            <form action="" id="emailstats" class="statinput">
+                <div class="inputs">
+                    <label for="sent" class="">Number of sent emails</label>
+                    <input name="sent" class="" id="sent" type="number" min="0" placeholder="Sent"></input>
+                </div>
+                <div class="inputs">
+                    <label for="read" class="">Number of read emails</label>
+                    <input name="read" class="" id="read" type="number" min="0" placeholder="Read"></input>
+                </div>
+                <div class="inputs">    
+                    <label for="click" class="">Number of clicks in the email</label>
+                    <input name="click" class="" id="click" type="number" min="0" placeholder="Clicks"></input>
+                </div>
+                <div class="buttons">
+                    <button type="submit"  class="submit" name="submit" value="calculate">Calculate</button>
+                    <button type="reset" class="reset" value="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+        <div class="results">
+
+        </div>
+</div>
+    <script src="emailstats.js"></script>
+</body>
+</html>
