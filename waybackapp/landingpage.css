@@ -28,8 +28,9 @@ p{
 }
 
 .bg-dark{
-    background-color: #010203;
+    background-color: #0d141d;
 }
+
 
 .white{
     color: white;
@@ -54,7 +55,7 @@ p{
 
 .header--small{
     font-size: 1.2rem;
-    margin: 0;
+    margin-bottom: 20px;
 }
 
 .text-center{
@@ -67,7 +68,7 @@ p{
 
 .btn{
     padding: .5em 1em;
-    border: 2px solid #5415a6;
+    border:none;
     border-radius: 10px;
     font-size: 1.2rem;
     text-decoration: none;
@@ -75,7 +76,15 @@ p{
     cursor: pointer;
     transition: .2s;
     color: white;
+    
 }
+
+
+.bg-purple-btn{
+    background-color: slateblue;
+}
+
+
 
 section{
     padding: 2rem 0;
@@ -194,6 +203,7 @@ li{
 #textcontent{
     order: 1;
     margin-top: 0;
+    margin: auto 0;
 }
 
 .fab, .fas{
@@ -204,8 +214,9 @@ li{
 /* //animations */
 .btn:hover,
 .btn--long:hover{
-    
-    transform: scale(.95);
+    background-color: rgb(91, 29, 190);
+    transform: scale(1.05);
+    box-shadow: -2px 3px 42px -14px rgba(0,0,0,1);
 }
 
 .card-container:hover{
