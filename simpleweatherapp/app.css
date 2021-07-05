@@ -86,7 +86,8 @@ button{
 }
 
 button:hover{
-    background-color: #cf8000;;
+    background-color: #cf8000;
+    transition: ease-in 100ms;
 }
 
 #msg{
@@ -149,8 +150,23 @@ button:hover{
 #hint{
     opacity: .7;
     animation: info .5s  1;
-
 }
+
+
+@keyframes info{
+    0%{
+        transform: translateY(-10px);
+        opacity: 0.1
+    }
+    50%{
+        opacity: .3;
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
 
 #hint__info{
     margin-top: 2em;
@@ -164,19 +180,6 @@ button:hover{
     opacity: .9;
 }
 
-@keyframes info{
-    0%{
-        transform: translateY(-10px);
-        opacity: 0.1
-    }
-    50%{
-        opacity: .5;
-        transform: translateY(3px);
-    }
-    100%{
-        transform: translateY(0);
-    }
-}
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
