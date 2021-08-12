@@ -251,6 +251,7 @@ input{
 
 .portfolio__thumbnail{
     margin-top: 2em;
+    cursor: pointer;
 }
 
 .portfolio__title{
